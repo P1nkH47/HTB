@@ -35,7 +35,13 @@ As usual, I checked the source-code for information but nothing interesting seem
 
 ![image](https://user-images.githubusercontent.com/51139868/214158071-50cc0e74-0d01-4222-83e3-a503d24baa0f.png)
 
-angoose
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Then I ran a fuzzing for directories and DNS discovery
+
+
+
+in progress......... loading............................
 
 
 
